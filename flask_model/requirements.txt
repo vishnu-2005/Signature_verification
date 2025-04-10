@@ -3,3 +3,4 @@ transformers==4.38.2
 Pillow
 flask
 requests
+gunicorn
