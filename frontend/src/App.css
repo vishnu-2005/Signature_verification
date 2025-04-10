@@ -1,0 +1,74 @@
+/* global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Form styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  color: red;
+  text-align: center;
+}
+
+.sign-up-container,
+.sign-in-container,
+.upload-page {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+}
+
+.upload-page .signatures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.upload-page .signatures div {
+  margin: 10px;
+}
+
+.upload-page img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}

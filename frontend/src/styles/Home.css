@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
+  scroll-behavior: smooth; /* Add this for smooth scrolling */
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.start {
+  scroll-snap-align: start; /* Add this for scroll snapping */
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 92vh;
+}
+
+.hero-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Move the video behind the content */
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background for readability */
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Information Cards */
+.info-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  scroll-snap-align: start; /* Add this for scroll snapping */
+}
+
+/* Upload Process Section */
+.upload-process {
+  padding: 40px 20px;
+  background-color: #f7fafc;
+  text-align: center;
+  scroll-snap-align: start; /* Add this for scroll snapping */
+}
+
+.upload-process h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.step h3 {
+  color: #3498db;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Accordion Section */
+.accordion-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.accordion-section h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .process-steps {
+    width: 90%;
+  }
+  .hero-background {
+    height: 300px;
+  }
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Add this for scroll snapping */
+html {
+  scroll-snap-type: y mandatory;
+}

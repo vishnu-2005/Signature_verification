@@ -1,0 +1,74 @@
+.upload-page {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.upload-page h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.upload-page input[type="text"],
+.upload-page input[type="file"] {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.upload-page button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.upload-page button:hover {
+  background-color: #34495e;
+}
+
+.image-preview {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.preview-image {
+  width: 50%;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.refresh_button {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.refresh_button button {
+  width: 20%;
+  background-color: #34495e;
+}
+
+.refresh_button button:hover {
+  background-color: #34495e;
+  width: 21%;
+}
+
+.result {
+  width: 100%;
+  text-align: center;
+}

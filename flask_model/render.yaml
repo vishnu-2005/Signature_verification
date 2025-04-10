@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: flask-signature-model
+    runtime: python
+    buildCommand: ""
+    startCommand: bash start.sh
+    envVars:
+      - key: HF_HUB_DISABLE_SYMLINKS_WARNING
+        value: "1"
