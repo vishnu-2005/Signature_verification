@@ -1,4 +1,4 @@
-torch==2.2.2+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+torch==2.2.2 -f https://download.pytorch.org/whl/cpu/torch_stable.html
 transformers==4.38.2
 Pillow
 flask
